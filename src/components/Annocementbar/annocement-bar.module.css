@@ -1,0 +1,43 @@
+.ann_bar {
+    padding: 8px 170px;
+    /* background-color: red; */
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+}
+
+.icons{
+    /* background-color: red; */
+    /* height: 50px;
+    width: auto; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: ;
+}
+
+.icons img {
+    height: 50px;
+    width: auto;
+}
+
+.icon {
+    /* padding: 10px 15px; */
+    /* background-color: red; */
+    /* border: 1px solid #2f3737; */
+    /* border-radius: 50px; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    margin-right: 6rem;
+    
+} 
+
+
+.icon  p {
+    font-size: 22px;
+    font-weight: 300;
+    font-family: 'outfit';
+    margin-right: 6rem;
+
+}
