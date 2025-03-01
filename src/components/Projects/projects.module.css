@@ -1,0 +1,39 @@
+.projects {
+    margin: 80px 170px;
+    /* height: 440px; */
+    width: auto;
+    border: 2px solid #E85D04;
+    border-radius: 20px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* text-align: center; */
+}
+
+.proTitle {
+    padding: 10px;
+}
+
+.projects h1{
+    color: #E85D04;
+    margin: 10px;
+    border-bottom: 3px solid #E85D04;
+    transition: 0.3s ease-in;
+}
+
+.projects h1:hover {
+    color: #Dc2f02;
+    border-bottom: 3px solid #DC2F02;
+    transform: scale(1.1);
+}
+
+
+.proContent {
+    background-color: green;
+    padding: 10px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}

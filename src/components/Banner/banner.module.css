@@ -1,0 +1,17 @@
+.banner {
+    padding: 80px 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img {
+    padding: 10px;
+    max-width: 100%;
+    height: auto;
+    transition: 0.3s ease;
+}
+
+.banner img:hover {
+    transform: scale(1.1);
+}

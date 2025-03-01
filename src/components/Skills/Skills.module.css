@@ -1,0 +1,77 @@
+/* For Skills */
+.skills {
+    margin: 80px 170px;
+    /* height: 440px; */
+    width: auto;
+    /* border: 2px solid #E85D04; */
+    border-radius: 20px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* text-align: center; */
+}
+
+.skillTitle{
+    padding: 10px;
+}
+
+.skills h1 {
+    color: #E85D04;
+    margin: 10px;
+    border-bottom: 3px solid #E85D04;
+    transition: 0.3s ease-in;
+}
+
+.skills h1:hover{
+    color: #Dc2f02;
+    border-bottom: 3px solid #DC2F02;
+    transform: scale(1.1);
+}
+
+.allSkills {
+    margin: 10px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.skill {
+    height: 150px;
+    width: 120px;
+    padding: 10px 30px;
+    /* background-color: #DC2F02; */
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.3 ease-in;   
+    cursor: pointer;
+}
+
+.skill img {
+    height: 100px;
+    width: auto;
+}
+
+.skill h3 {
+    padding-top: 10px;
+    color: #fff;
+    font-size: 24px;
+    transition: 0.3s ease-in
+}
+
+ .skill h3:hover {
+    color: #DC2F02;
+} 
+
+.skill:hover{
+    border: 2px solid #E85D04;
+    color: #DC2F02;
+    transform: scale(1.1);
+}

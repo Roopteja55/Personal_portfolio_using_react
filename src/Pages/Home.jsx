@@ -1,6 +1,11 @@
+import About from "../components/About/About";
 import Annocement_bar from "../components/Annocementbar/Annocement_bar";
+import Banner from "../components/Banner/Banner";
+import Footer from "../components/Footer/Footer";
 import Header from "../components/header/Header";
 import Hero from "../components/Hero/Hero";
+import Projects from "../components/Projects/Projects";
+import Skills from "../components/Skills/Skills";
 
 
 const Home = () => {
@@ -9,6 +14,11 @@ const Home = () => {
       <Header />
       <Annocement_bar />
       <Hero />
+      <Banner />
+      <About />
+      <Skills />
+      <Projects />
+      <Footer />
       </>
   )
 }
