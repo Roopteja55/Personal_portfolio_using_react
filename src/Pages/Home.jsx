@@ -1,6 +1,8 @@
 import About from "../components/About/About";
 import Annocement_bar from "../components/Annocementbar/Annocement_bar";
 import Banner from "../components/Banner/Banner";
+import Contact from "../components/Contact/Contact";
+import Education from "../components/Education/Education";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/header/Header";
 import Hero from "../components/Hero/Hero";
@@ -17,7 +19,9 @@ const Home = () => {
       <Banner />
       <About />
       <Skills />
-      <Projects />
+      {/* <Projects /> */}
+      <Education />
+      <Contact />
       <Footer />
       </>
   )

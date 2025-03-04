@@ -1,4 +1,27 @@
 .footer {
-    margin: 80px 170px;
+    margin: 50px 170px;
     border-top: 2px solid #DC2F02;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_left{
+    /* display: flex; */
+    /* align-items: center; */
+}
+
+.footer_left p{
+    padding: 15px 120px;
+    line-height: 35px;
+    font-size: 24px;
+    max-width: 550px;
+}
+
+.footer_right{
+    display: flex;
+    gap: 50px;
+    justify-content:space-between;
+
+
 }
