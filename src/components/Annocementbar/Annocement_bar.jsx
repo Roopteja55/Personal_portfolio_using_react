@@ -16,10 +16,42 @@ import RDS from '../../assets/RDS.png'
 import EC2 from '../../assets/EC2.png'
 
 
+const techIcons = [
+  { img: Docker, name: "Docker" },
+  { img: Ansible, name: "Ansible" },
+  { img: AWS, name: "AWS" },
+  { img: EC2, name: "AWS EC2" },
+  { img: RDS, name: "AWS RDS" },
+  { img: Git, name: "Git" },
+  { img: GitHub, name: "GitHub" },
+  { img: Jenkins, name: "Jenkins" },
+  { img: Python, name: "Python" },
+  { img: Terraform, name: "Terraform" },
+  { img: Kubernetes, name: "Kubernetes" },
+  { img: Linux, name: "Linux" },
+  { img: Grafana, name: "Grafana" },
+  { img: S3, name: "S3" }
+];
+
+
+
 const Annocement_bar = () => {
   return (
     <>
       <div className={styles.ann_bar}>
+        <Marquee speed={60} pauseOnHover>
+          <div className={styles.icons}>
+            {techIcons.map((tech, index) => (
+              <div key={index} className={styles.icon}>
+                <img src={tech.img} alt={tech.name} />
+                <p>- {tech.name}</p>
+              </div>
+            ))}
+          </div>
+        </Marquee>
+      </div>
+
+      {/* <div className={styles.ann_bar}>
         <Marquee speed={60} pauseOnHover>
           <div className={styles.icons}>
             <div className={styles.icon}>
@@ -84,10 +116,9 @@ const Annocement_bar = () => {
             
           </div>
           </Marquee>
-    </div>
+    </div> */}
     </>
-    
-  )
+  );
 }
 
 export default Annocement_bar

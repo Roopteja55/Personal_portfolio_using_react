@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: ;
+    /* gap: ; */
 }
 
 .icons img {
@@ -40,4 +40,39 @@
     font-family: 'outfit';
     margin-right: 6rem;
 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .icons {
+        gap: 20px;
+    }
+
+    .icon img {
+        width: 40px; /* Smaller icon size for tablets */
+    }
+
+    .icon p {
+        font-size: 14px; /* Smaller text */
+    }
+}
+
+@media (max-width: 480px) {
+    .icons {
+        gap: 15px;
+    }
+
+    .icon img {
+        width: 35px; /* Smaller icons for mobile */
+    }
+
+    .icon p {
+        font-size: 12px; /* Adjust text size for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .ann_bar {
+        display: none; /* Hide marquee on mobile */
+    }
 }

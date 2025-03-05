@@ -4,7 +4,7 @@ import styles from './education.module.css'
 const Education = () => {
   return (
     <>
-      <div className={styles.education}>
+      <div id='education' className={styles.education}>
         <div className={styles.eduTitle}>
           <h1>Education</h1>
         </div>

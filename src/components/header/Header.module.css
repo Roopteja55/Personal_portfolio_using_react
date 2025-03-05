@@ -40,6 +40,15 @@
     cursor: pointer;
     transition: 0.3s;
 } 
+.nav_connect .anchor_link{
+    /* background-color: #062F4F; */
+    padding: 20px 40px;
+    border-radius: 50px;
+    border: 2px solid #E85D04;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+} 
 
 .nav_connect:hover{
     background: #DC2F02;
@@ -47,3 +56,23 @@
     /* transform: scale(1.01); */
     
 }
+
+.nav li p{
+    font-size: 20px;
+    width: auto;
+}
+
+.nav li{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+
+.anchor_link {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Responsive design */
