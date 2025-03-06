@@ -8,7 +8,6 @@
     padding-bottom: 10px;
 }
 
-
 /* Fade-in animation */
 @keyframes fadeIn {
     from {
@@ -35,20 +34,20 @@
 
 /* Project Card */
 .project {
-    /* background-color: #1E1E1E; */
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
     position: relative;
-  display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .project:hover {
     transform: scale(1.05);
-box-shadow: 0px 4px 8px #DC2F02;}
+    box-shadow: 0px 4px 8px #DC2F02;
+}
 
 /* Project Image */
 .projectImg {
@@ -83,7 +82,7 @@ box-shadow: 0px 4px 8px #DC2F02;}
     margin-bottom: 10px;
 }
 
-/* GitHub Button (Moved to Bottom Left) */
+/* GitHub Button */
 .projectFooter {
     display: flex;
     justify-content: flex-start;
@@ -134,16 +133,34 @@ box-shadow: 0px 4px 8px #DC2F02;}
     transform: scale(1.05);
 }
 
-/* Responsive Design */
+/* ✅ Responsive Design */
 @media (max-width: 1024px) {
+    .projects {
+        margin: 60px 50px;
+    }
+
     .projectsGrid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
     }
 }
 
 @media (max-width: 768px) {
+    .projects {
+        margin: 40px 20px;
+    }
+
     .projectsGrid {
         grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .project {
+        padding: 15px;
+    }
+
+    .githubBtn {
+        font-size: 12px;
+        padding: 6px 12px;
     }
 }
-             

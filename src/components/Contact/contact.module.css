@@ -1,4 +1,4 @@
-.contact{
+.contact {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,63 +7,56 @@
     margin: 80px 170px;
 }
 
-.conTitle{
+.conTitle {
     position: relative;
 }
 
-.conTitle h1{
+.conTitle h1 {
     padding: 0px 30px;
     font-size: 80px;
     font-weight: 500;
 }
 
-/* .conTitle img{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-} */
-
-.con_section{
+/* Contact Section Layout */
+.con_section {
     display: flex;
     gap: 150px;
-
 }
 
-.con_left{
+/* Left Section */
+.con_left {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-.con_left h1{
+.con_left h1 {
     font-size: 80px;
     font-weight: 700;
     color: #E85D04;
-
 }
 
-.con_left h1:hover{
+.con_left h1:hover {
     color: #DC2F02;
 }
 
-.con_left p{
+.con_left p {
     min-width: 200px;
     color: #D8D8D8;
     font-size: 20px;
     line-height: 35px;
 }
 
+/* Contact Details */
 .con_Details {
     display: flex;
     flex-direction: column;
     gap: 30px;
     color: #D8D8D8;
     font-size: 22px;
-
 }
 
-.con_Detail{
+.con_Detail {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -73,24 +66,24 @@
     height: 50px;
 }
 
-.con_right{
+/* Right Section (Form) */
+.con_right {
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 30px;
-
 }
 
-.con_right label{
+.con_right label {
     color: #DC2F02;
     font-size: 22px;
     font-weight: 500;
 }
 
-.con_right input {
+.con_right input,
+.con_right textarea {
     border: none;
     width: 700px;
-    height: 78px;
     padding-left: 20px;
     border-radius: 4px;
     background: #242424;
@@ -99,17 +92,16 @@
     font-size: 20px;
 }
 
-.con_right textarea {
-    width: 650px;
-    border: none;
-    padding: 25px;
-    border-radius: 4px;
-    background-color: #242424;
-    color: #D8D8D8;
-    font-family: Outfit;
-    font-size: 20px;
+.con_right input {
+    height: 78px;
 }
 
+.con_right textarea {
+    width: 650px;
+    padding: 25px;
+}
+
+/* Submit Button */
 .con_submit {
     border: none;
     color: #D8D8D8;
@@ -122,8 +114,75 @@
     transition: 0.3s ease-in;
 }
 
-.con_submit:hover{
+.con_submit:hover {
     background-color: #E85D04;
     transform: scale(1.1);
     transition: 0.3s ease-in;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 1024px) {
+    .contact {
+        margin: 60px 50px;
+    }
+
+    .con_section {
+        gap: 50px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .con_left h1 {
+        font-size: 60px;
+    }
+
+    .con_left p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .con_right input,
+    .con_right textarea {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact {
+        margin: 40px 20px;
+    }
+
+    .conTitle h1 {
+        font-size: 50px;
+    }
+
+    .con_left h1 {
+        font-size: 50px;
+    }
+
+    .con_left p {
+        font-size: 16px;
+    }
+
+    .con_Details {
+        font-size: 18px;
+    }
+
+    .con_Detail img {
+        height: 40px;
+    }
+
+    .con_right input {
+        height: 60px;
+    }
+
+    .con_right textarea {
+        padding: 15px;
+    }
+
+    .con_submit {
+        font-size: 18px;
+        padding: 15px 50px;
+    }
 }

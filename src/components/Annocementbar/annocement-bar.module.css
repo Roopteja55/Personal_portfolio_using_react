@@ -1,43 +1,55 @@
 .ann_bar {
     padding: 8px 170px;
-    /* background-color: red; */
-    /* display: flex;
-    align-items: center;
-    justify-content: space-between; */
 }
 
-.icons{
-    /* background-color: red; */
-    /* height: 50px;
-    width: auto; */
+/* Icons container */
+.icons {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: ;
+    gap: 20px;
 }
 
+/* Images inside icons */
 .icons img {
     height: 50px;
     width: auto;
 }
 
+/* Each individual icon container */
 .icon {
-    /* padding: 10px 15px; */
-    /* background-color: red; */
-    /* border: 1px solid #2f3737; */
-    /* border-radius: 50px; */
     display: flex;
     align-items: center;
-    /* justify-content: space-around; */
-    margin-right: 6rem;
-    
-} 
+    margin-right: 4rem;
+}
 
-
-.icon  p {
+/* Text inside the icons */
+.icon p {
     font-size: 22px;
     font-weight: 300;
-    font-family: 'outfit';
-    margin-right: 6rem;
+    font-family: 'Outfit';
+    margin-right: 4rem;
+}
 
+/* ✅ Responsive Design for screens ≤ 765px */
+@media (max-width: 765px) {
+    .ann_bar {
+        padding: 8px 50px; /* Reduce padding */
+    }
+
+    .icons {
+        gap: 10px; /* Reduce gap */
+    }
+
+    .icons img {
+        height: 35px; /* Reduce icon size */
+    }
+
+    .icon {
+        margin-right: 2rem;
+    }
+
+    .icon p {
+        display: none; /* ❌ Hide text on mobile */
+    }
 }

@@ -15,3 +15,16 @@
 .banner img:hover {
     transform: scale(1.1);
 }
+
+/* ✅ Responsive Design for screens ≤ 765px */
+@media (max-width: 765px) {
+    .banner {
+        padding: 40px 20px; /* Reduce padding for smaller screens */
+    }
+
+    .banner img {
+        padding: 5px;
+        max-width: 90%; /* Adjust width for mobile */
+        transform: none; /* Remove hover effect on mobile */
+    }
+}

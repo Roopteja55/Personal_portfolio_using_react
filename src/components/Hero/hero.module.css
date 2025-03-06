@@ -23,7 +23,6 @@
     transition: 0.3s ease-in-out;
 }
 
-
 .hero h1 span:hover {
     color: #E85D04;
     transform: scale(1.01);
@@ -55,8 +54,6 @@ p {
 
 .hero_connect:hover {
     background-color: #DC2F02;
-    /* border: 2px solid #E85D04; */
-    /* border-radius: 50px; */
 }
 
 .hero_anchor_link {
@@ -64,7 +61,7 @@ p {
     color: #fff;
 }
 
-.hero_resume{
+.hero_resume {
     padding: 25px 45px;
     background-color: #DC2F02;
     border: 2px solid #E85D04;
@@ -73,11 +70,46 @@ p {
     cursor: pointer;
 }
 
-.hero_resume a{
+.hero_resume a {
     text-decoration: none;
     color: #fff;
 }
 
 .hero_resume:hover {
     background-color: #242424;
+}
+
+/* ✅ Responsive Design for screens ≤ 765px */
+@media (max-width: 765px) {
+    .hero {
+        gap: 20px;
+    }
+
+    .hero img {
+        height: 100px; /* Reduce image size */
+        padding-top: 100px;
+    }
+
+    .hero h1 {
+        font-size: 40px; /* Reduce heading size */
+        width: 90%;
+    }
+
+    p {
+        font-size: 18px; /* Reduce paragraph text */
+        width: 80%;
+        line-height: 28px;
+    }
+
+    .action {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 15px;
+        font-size: 18px; /* Reduce button font size */
+    }
+
+    .hero_connect, 
+    .hero_resume {
+        padding: 15px 30px; /* Reduce button size */
+        font-size: 16px;
+    }
 }

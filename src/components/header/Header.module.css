@@ -1,82 +1,140 @@
+/* Header Styling */
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 170px;
-    border-bottom: 2px solid #DC2F02;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 170px;
+  border-bottom: 2px solid #DC2F02;
 }
 
+/* Logo Styling */
 .logo {
-    font-size: 35px;
-    text-decoration: none;
-    color: #DC2F02;
-    transition: 0.3s ease-in;
+  font-size: 35px;
+  text-decoration: none;
+  color: #DC2F02;
+  transition: 0.3s ease-in;
 }
 
 .logo:hover {
-    color: #E85D04;
+  color: #E85D04;
 }
 
+/* Navigation Bar */
 .nav {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    font-size: 20px;
-    gap: 60px;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: 20px;
+  gap: 60px;
+  cursor: pointer;
 }
 
 .nav li p {
-    font-size: 20px;
-    width: auto;
-    cursor: pointer;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .nav li {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
-.nav .anchor_link{
-    text-decoration: none;
-    color: #fff;
+.nav .anchor_link {
+  text-decoration: none;
+  color: #fff;
 }
 
-/* Fixing nav_connect */
+/* Contact Button */
 .nav_connect {
-    display: inline-block;
-    text-align: center;
-    padding: 15px 35px;
-    border-radius: 50px;
-    border: 2px solid #E85D04;
-    font-size: 22px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-    background-color: transparent;
-    color: #E85D04;
+  display: inline-block;
+  text-align: center;
+  padding: 15px 35px;
+  border-radius: 50px;
+  border: 2px solid #E85D04;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  background-color: transparent;
+  color: #E85D04;
 }
 
 .nav_connect:hover {
-    background: #DC2F02;
-    border-color: #E85D04;
-    color: white;
+  background: #DC2F02;
+  border-color: #E85D04;
+  color: white;
 }
 
-/* Fixing anchor_link inside nav_connect */
-.nav_connect .anchor_link {
-    text-decoration: none;
-    color: inherit;
-    font-weight: bold;
-}
-
-/* Active state */
+/* Active State */
 .active {
-    /* background: #DC2F02; */
-    color: white !important;
-    border-color: #E85D04;
+  color: white !important;
+  border-color: #E85D04;
+  padding: 10px;
+  border-bottom: 2px solid #DC2F02;
+}
+
+/* --- 📌 Responsive Design (Mobile-Friendly) --- */
+
+/* Hide Navigation & Show Menu Button Below 765px */
+@media (max-width: 765px) {
+  .header {
+    padding: 20px 40px;
+  }
+
+  /* Hide Normal Navigation */
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 250px;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+    text-align: center;
+  }
+
+  /* Show Navigation when Active */
+  .nav.show {
+    display: flex;
+  }
+
+  .nav li {
     padding: 10px;
-    border-bottom: 2px solid #DC2F02;
-    /* border-radius: 20px; */
+  }
+
+  .nav .anchor_link {
+    font-size: 18px;
+  }
+
+  /* Menu Icon */
+  .menu_icon {
+    display: block;
+    width: 40px;
+    cursor: pointer;
+    filter: invert(1);
+  }
+
+  /* Hide Contact Button on Mobile */
+  .nav_connect {
+    display: none;
+  }
+}
+
+/* Above 765px (Show Navigation & Hide Menu Icon) */
+@media (min-width: 766px) {
+  .menu_icon {
+    display: none;
+  }
+
+  .nav {
+    display: flex !important;
+    position: static;
+    background: none;
+    width: auto;
+    padding: 0;
+  }
 }

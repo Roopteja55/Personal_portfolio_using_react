@@ -1,19 +1,15 @@
 /* For Skills */
 .skills {
     margin: 80px 170px;
-    /* height: 440px; */
     width: auto;
-    /* border: 2px solid #E85D04; */
     border-radius: 20px;
-    /* background-color: red; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* text-align: center; */
 }
 
-.skillTitle{
+.skillTitle {
     padding: 10px;
 }
 
@@ -24,7 +20,7 @@
     transition: 0.3s ease-in;
 }
 
-.skills h1:hover{
+.skills h1:hover {
     color: #Dc2f02;
     border-bottom: 3px solid #DC2F02;
     transform: scale(1.1);
@@ -38,7 +34,6 @@
     gap: 80px;
     max-width: 100%;
     justify-content: center;
-    /* box-shadow: 0px 4px 8px #DC2F02; */
 }
 
 .allSkills:hover {
@@ -49,13 +44,12 @@
     height: 150px;
     width: 120px;
     padding: 10px 30px;
-    /* background-color: #DC2F02; */
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    transition: 0.3 ease-in;   
+    transition: 0.3s ease-in;
     cursor: pointer;
 }
 
@@ -68,16 +62,41 @@
     padding-top: 10px;
     color: #fff;
     font-size: 24px;
-    transition: 0.3s ease-in
+    transition: 0.3s ease-in;
 }
 
- .skill h3:hover {
+.skill h3:hover {
     color: #DC2F02;
-} 
+}
 
-.skill:hover{
+.skill:hover {
     border: 2px solid #E85D04;
     box-shadow: 0px 4px 8px #DC2F02;
     color: #DC2F02;
     transform: scale(1.1);
+}
+
+/* ✅ Responsive Design for screens ≤ 765px */
+@media (max-width: 765px) {
+    .skills {
+        margin: 40px 20px;
+    }
+
+    .allSkills {
+        gap: 40px;
+    }
+
+    .skill {
+        height: 120px;
+        width: 100px;
+        padding: 10px 20px;
+    }
+
+    .skill img {
+        height: 80px;
+    }
+
+    .skill h3 {
+        font-size: 18px;
+    }
 }

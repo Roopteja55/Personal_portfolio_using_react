@@ -1,25 +1,65 @@
+/* Global Reset */
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body {
-  font-family: 'outfit';
-}
-
-
+/* Root Variables */
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  /* line-height: 1.5; */
+  font-family: 'Outfit', system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
+  
+  /* Smooth text rendering */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Responsive Font Sizing */
+  --base-font-size: 16px;
+  --heading-font-size: 32px;
 }
 
+/* Body */
+body {
+  font-size: var(--base-font-size);
+  line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+/* Containers for Responsive Layout */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Responsive Typography */
+@media (max-width: 1024px) {
+  :root {
+    --base-font-size: 15px;
+    --heading-font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --base-font-size: 14px;
+    --heading-font-size: 24px;
+  }
+}
+
+/* Responsive Spacing */
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+  }
+}
