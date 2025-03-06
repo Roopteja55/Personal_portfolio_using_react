@@ -66,6 +66,10 @@
   color: white;
 }
 
+.nav_connect .anchor_link{
+  text-decoration: none;
+  color: #fff;
+}
 /* Active State */
 .active {
   color: white !important;
