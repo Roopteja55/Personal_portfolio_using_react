@@ -59,6 +59,11 @@ p {
     /* border-radius: 50px; */
 }
 
+.hero_anchor_link {
+    text-decoration: none;
+    color: #fff;
+}
+
 .hero_resume{
     padding: 25px 45px;
     background-color: #DC2F02;
@@ -66,6 +71,11 @@ p {
     border-radius: 50px;
     transition: 0.3s ease-in;
     cursor: pointer;
+}
+
+.hero_resume a{
+    text-decoration: none;
+    color: #fff;
 }
 
 .hero_resume:hover {

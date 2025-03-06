@@ -10,21 +10,22 @@ import Projects from "../components/Projects/Projects";
 import Skills from "../components/Skills/Skills";
 
 
+
 const Home = () => {
   return (
-      <>
+    <>
       <Header />
       <Annocement_bar />
       <Hero />
       <Banner />
       <About />
       <Skills />
-      {/* <Projects /> */}
+      <Projects />
       <Education />
       <Contact />
       <Footer />
-      </>
-  )
-}
+    </>
+  );
+};
 
-export default Home
+export default Home;

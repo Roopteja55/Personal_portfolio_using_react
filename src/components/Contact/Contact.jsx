@@ -38,7 +38,7 @@ const Contact = () => {
 
 
   return (
-    <div className={styles.contact}>
+    <div id="contact" className={styles.contact}>
       <div className={styles.conTitle}>
         <h1>Get In Touch</h1>
       </div>
