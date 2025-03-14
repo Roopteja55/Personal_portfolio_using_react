@@ -47,9 +47,10 @@ const Contact = () => {
         <div className={styles.con_left}>
           <h1>Let's Talk</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-            aliquam consequuntur, explicabo est obcaecati omnis commodi sequi
-            sit officia magni, iste, corporis excepturi facere magnam.
+            I am a DevOps Engineer skilled in AWS, Kubernetes, Docker,
+            Terraform, Ansible, and CI/CD pipelines, passionate about automation
+            and infrastructure optimization. Feel free to connect with me for
+            collaborations, opportunities, or tech discussions!
           </p>
           <div className={styles.con_Details}>
             <div className={styles.con_Detail}>

@@ -63,6 +63,11 @@
   transition: 0.3s ease-in-out;
 }
 
+.hero_resume a{
+  text-decoration: none;
+  color: #fff;
+}
+
 .hero_resume:hover {
   background: #E85D04;
   transform: scale(1.1);

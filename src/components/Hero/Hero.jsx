@@ -8,7 +8,7 @@ const Hero = () => {
     <div id="home" className={styles.hero}>
       <img src={user} alt="User Avatar" />
       <h1>
-        <span>I'm Praveen Chinthala, </span>Cloud Engineer
+        <span>I'm Praveen Chinthala, </span>DevOps Engineer
       </h1>
       <p>
         Enthusiastic and detail-oriented computer science graduate seeking an

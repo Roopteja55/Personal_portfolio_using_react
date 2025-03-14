@@ -16,35 +16,66 @@ import RDS from '../../assets/RDS.png'
 import EC2 from '../../assets/EC2.png'
 
 
+const skills = [
+  { img: AWS, label: "AWS" },
+  { img: EC2, label: "EC2" },
+  { img: S3, label: "S3" },
+  { img: RDS, label: "RDS" },
+  { img: Git, label: "Git" },
+  { img: GitHub, label: "GitHub" },
+  { img: Jenkins, label: "Jenkins" },
+  { img: Terraform, label: "Terraform" },
+  { img: Ansible, label: "Ansible" },
+  { img: Docker, label: "Docker" },
+  { img: Kubernetes, label: "Kubernetes" },
+  { img: Grafana, label: "Grafana" },
+  { img: Linux, label: "Linux" },
+  { img: Python, label: "Python" },
+];
+
+
 const Annocement_bar = () => {
   return (
     <>
       <div className={styles.ann_bar}>
         <Marquee speed={60} pauseOnHover>
           <div className={styles.icons}>
-            <div className={styles.icon}>
-              <img src={Docker} alt="Docker" />
-              <p>-Docker</p>
-            </div>
+            {skills.map((skill, index) => (
+              <div key={index} className={styles.icon}>
+                <img src={skill.img} alt={skill.label} />
+                <p>- {skill.label}</p>
+              </div>
+            ))}
+          </div>
+        </Marquee>
+      </div>
 
+      {/* <div className={styles.ann_bar}>
+        <Marquee speed={60} pauseOnHover>
+          <div className={styles.icons}>
             <div className={styles.icon}>
-              <img src={Ansible} alt="Ansible" />
-              <p>-Ansible</p>
-            </div>
-
-            <div className={styles.icon}>
-              <img src={AWS} alt="AWS" />
+              <img src={AWS} alt="Docker" />
               <p>-AWS</p>
             </div>
 
             <div className={styles.icon}>
-              <img src={EC2} alt="AWS" />
-              <p>-AWS EC2</p>
+              <img src={EC2} alt="Ansible" />
+              <p>-EC2</p>
+            </div>
+
+            <div className={styles.icon}>
+              <img src={S3} alt="AWS" />
+              <p>-S3</p>
             </div>
 
             <div className={styles.icon}>
               <img src={RDS} alt="AWS" />
-              <p>-AWS RDS</p>
+              <p>-RDS</p>
+            </div>
+
+            <div className={styles.icon}>
+              <img src={RDS} alt="AWS" />
+              <p>-git</p>
             </div>
 
              <div className={styles.icon}>
@@ -84,10 +115,9 @@ const Annocement_bar = () => {
             
           </div>
           </Marquee>
-    </div>
+    </div> */}
     </>
-    
-  )
+  );
 }
 
 export default Annocement_bar

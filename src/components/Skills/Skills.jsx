@@ -15,20 +15,20 @@ import RDS from "../../assets/RDS.png";
 import EC2 from "../../assets/EC2.png";
 
 const skillsData = [
-  { img: Docker, name: "Docker" },
-  { img: Ansible, name: "Ansible" },
   { img: Git, name: "Git" },
   { img: GitHub, name: "GitHub" },
   { img: Jenkins, name: "Jenkins" },
-  { img: Python, name: "Python" },
   { img: Terraform, name: "Terraform" },
+  { img: Ansible, name: "Ansible" },
+  { img: Docker, name: "Docker" },
   { img: Kubernetes, name: "Kubernetes" },
-  { img: Linux, name: "Linux" },
-  { img: Grafana, name: "Grafana" },
   { img: AWS, name: "AWS" },
+  { img: EC2, name: "EC2" },
   { img: S3, name: "Amazon S3" },
   { img: RDS, name: "RDS" },
-  { img: EC2, name: "EC2" },
+  { img: Grafana, name: "Grafana" },
+  { img: Linux, name: "Linux" },
+  { img: Python, name: "Python" },
 ];
 
 const Skills = () => {

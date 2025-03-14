@@ -1,5 +1,7 @@
 import styles from "./about.module.css";
 import user from "../../assets/user.png";
+import Resume from "../../assets/PRAVEEN RESUME LATEST.pdf";
+
 
 const About = () => {
   return (
@@ -17,19 +19,24 @@ const About = () => {
           <div className={styles.about_right}>
             <div className={styles.about_right1}>
               <h2>
-                <span>I&apos;m Praveen Chinthala, </span>Cloud Engineer
+                <span>I&apos;m Praveen Chinthala, </span>DevOps Engineer
               </h2>
-              <div className={styles.hero_resume}>Resume</div>
+              <div className={styles.hero_resume}>
+                <a href={Resume} target="_blank" rel="noopener noreferrer">
+                  Resume
+                </a>
+              </div>
             </div>
 
             <div className={styles.about_right2}>
               <div className={styles.skill}>
-                <p>Docker</p><hr style={{ width: "60%" }} />
+                <p>Docker</p>
+                <hr style={{ width: "90%" }} />
               </div>
 
               <div className={styles.skill}>
                 <p>Kubernetes</p>
-                <hr style={{ width: "50%" }} />
+                <hr style={{ width: "95%" }} />
               </div>
 
               <div className={styles.skill}>
@@ -38,7 +45,7 @@ const About = () => {
               </div>
 
               <div className={styles.skill}>
-                <p>Git & GitHub</p>
+                <p>AWS</p>
                 <hr style={{ width: "90%" }} />
               </div>
             </div>
